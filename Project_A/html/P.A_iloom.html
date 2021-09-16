@@ -9,13 +9,13 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
-    <script src="../images/웹디실기/04-jQuery 오픈소스/jquery-1.12.3.js" type="text/javascript"></script>
+    <!-- <script src="../java/jquery-migrate-1.4.1.min.js"></script> -->
 </head>   
 
 <body>
     <header>
         <div class="inner">
-            <span class="material-icons-outlined">menu</span>
+            <span class="material-icons-outlined" id="menubtn">menu</span>
             <a href="#"><img src="../images/iloom/gnb_logo.png" alt="iloomlogo" class="logo"></a>
             <div class="topR">
                 <span><a href="#">로그인</a></span>
@@ -37,166 +37,220 @@
         <nav>
             <div class="inner">
                 <div class="nav">
-                    <span class="material-icons-outlined">close</span>
+                    <span class="material-icons-outlined" id="cloesbtn">close</span>
                     <div class="line"></div>
                     <!-- <div class="menuline"></div> -->
                     <div class="navmenu">
                         <div class="menutit">침실</div>
                         <div class="menubody">                        
-                            <div class="menubodytit">침대</div>
-                            <ul class="menubodysub">
-                                <li>모션베드</li>
-                                <li>일반침대</li>
-                                <li>패밀리침대</li>
-                                <li>액세서리</li>
-                                <li>매트리스</li>
+                            <!-- <div class="menubodytit">침대</div> -->
+                            <ul class="menubodytit">
+                                <li><a href="#">침대</a></li>
+                                <ul class="menubodysub">
+                                    <li><a href="#">모션베드</a></li>
+                                    <li><a href="#">일반침대</a></li>
+                                    <li><a href="#">패밀리침대</a></li>
+                                    <li><a href="#">액세서리</a></li>
+                                    <li><a href="#">매트리스</a></li>
+                                </ul>
                             </ul>
                             <hr>
-                            <div class="menubodytit">옷장</div>
-                            <ul class="menubodysub">
-                                <li>옷장</li>
-                                <li>액세서리</li>
+                            <!-- <div class="menubodytit">옷장</div> -->
+                            <ul class="menubodytit">
+                                <li><a href="#">옷장</a></li>
+                                <ul class="menubodysub">
+                                    <li><a href="#">옷장</a></li>
+                                    <li><a href="#">액세서리</a></li>
+                                </ul>
                             </ul>
                             <hr>
-                            <div class="menubodytit">수납장</div>
-                            <ul class="menubodysub">
-                                <li>협탁</li>
-                                <li>서랍장</li>
-                                <li>파티션수납장</li>
+                            <!-- <div class="menubodytit">수납장</div> -->
+                            <ul class="menubodytit">
+                                <li><a href="#">수납장</a></li>
+                                <ul class="menubodysub">
+                                    <li><a href="#">협탁</a></li>
+                                    <li><a href="#">서랍장</a></li>
+                                    <li><a href="#">파티션수납장</a></li>
+                                </ul>
                             </ul>
                             <hr>
-                            <div class="menubodytit">화장대</div>
-                            <ul class="menubodysub">
-                                <li>화장대</li>
-                                <li>스툴</li>
-                                <li>액세서리</li>
+                            <!-- <div class="menubodytit">화장대</div> -->
+                            <ul class="menubodytit">
+                                <li><a href="#">화장대</a></li>
+                                <ul class="menubodysub">
+                                    <li><a href="#">화장대</a></li>
+                                    <li><a href="#">스툴</a></li>
+                                    <li><a href="#">액세서리</a></li>
+                                </ul>
                             </ul>
                             <hr>
-                            <div class="menubodytit">액세서리</div>
+                            <!-- <div class="menubodytit">액세서리</div> -->
+                            <ul class="menubodytit">
+                                <li><a href="#">액세서리</a></li>
+                            </ul>
                             <hr>
-                            <div class="menubodytit">매트리스</div>
+                            <!-- <div class="menubodytit">매트리스</div> -->
+                            <ul class="menubodytit">
+                                <li><a href="#">매트리스</a></li>
+                            </ul>
                             <hr>
                         </div>
                     </div>
                     <div class="navmenu">
                         <div class="menutit">거실</div>
                         <div class="menubody">                        
-                            <div class="menubodytit">테이블</div>
-                            <ul class="menubodysub">
-                                <li>소파 테이블</li>
-                                <li>패밀리 테이블</li>
-                                <li>멀티 테이블</li>
-                                <li>액세서리</li>
+                            <ul class="menubodytit">
+                                <li><a href="#">테이블</a></li>
+                                <ul class="menubodysub">
+                                    <li><a href="#">소파 테이블</a></li>
+                                    <li><a href="#">패밀리 테이블</a></li>
+                                    <li><a href="#">멀티 테이블</a></li>
+                                    <li><a href="#">액세서리</a></li>
+                                </ul>
                             </ul>
                             <hr>
-                            <div class="menubodytit">거실장</div>
-                            <hr>
-                            <div class="menubodytit">소파</div>
-                            <ul class="menubodysub">
-                                <li>일자형</li>
-                                <li>카우치/코너</li>
-                                <li>1인/소파베드</li>
-                                <li>리클라이너</li>
-                                <li>액세서리</li>
+                            <ul class="menubodytit">
+                                <li><a href="#">거실장</a></li>
                             </ul>
                             <hr>
-                            <div class="menubodytit">수납장</div>
-                            <ul class="menubodysub">
-                                <li>책장</li>
-                                <li>장식장</li>
-                                <li>서랍장</li>
-                                <li>액세서리</li>
+                            <ul class="menubodytit">
+                                <li><a href="#">소파</a></li>
+                                <ul class="menubodysub">
+                                    <li><a href="#">일자형</a></li>
+                                    <li><a href="#">카우치/코너</a></li>
+                                    <li><a href="#">1인/소파베드</a></li>
+                                    <li><a href="#">리클라이너</a></li>
+                                    <li><a href="#">액세서리</a></li>
+                                </ul>
                             </ul>
                             <hr>
-                            <div class="menubodytit">액세서리</div>
+                            <ul class="menubodytit">
+                                <li><a href="#">수납장</a></li>
+                                <ul class="menubodysub">
+                                    <li><a href="#">책장</a></li>
+                                    <li><a href="#">장식장</a></li>
+                                    <li><a href="#">서랍장</a></li>
+                                    <li><a href="#">액세서리</a></li>
+                                </ul>
+                            </ul>
+                            <hr>
+                            <ul class="menubodytit">
+                                <li><a href="#">액세서리</a></li>
+                            </ul>
                             <hr>
                         </div>
                     </div>
                     <div class="navmenu">
                         <div class="menutit">주방</div>
                         <div class="menubody">                        
-                            <div class="menubodytit">식탁</div>
-                            <hr>
-                            <div class="menubodytit">수납장</div>
-                            <ul class="menubodysub">
-                                <li>수납장</li>
-                                <li>액세서리</li>
+                            <ul class="menubodytit">
+                                <li><a href="#">식탁</a></li>
                             </ul>
                             <hr>
-                            <div class="menubodytit">의자</div>
+                            <ul class="menubodytit">
+                                <li><a href="#">수납장</a></li>
+                                <ul class="menubodysub">
+                                    <li><a href="#">수납장</a></li>
+                                    <li><a href="#">액세서리</a></li>
+                                </ul>
+                            </ul>
+                            <hr>
+                            <ul class="menubodytit">
+                                <li><a href="#">의자</a></li>
+                            </ul>
                             <hr>
                         </div>
                     </div>
                     <div class="navmenu">
                         <div class="menutit">키즈룸</div>
                         <div class="menubody">                        
-                            <div class="menubodytit">침대</div>
-                            <ul class="menubodysub">
-                                <li>침대</li>
-                                <li>매트리스</li>
-                                <li>액세서리</li>
+                            <ul class="menubodytit">
+                                <li><a href="#">침대</a></li>
+                                <ul class="menubodysub">
+                                    <li><a href="#">침대</a></li>
+                                    <li><a href="#">매트리스</a></li>
+                                    <li><a href="#">액세서리</a></li>
+                                </ul>
                             </ul>
                             <hr>
-                            <div class="menubodytit">책상</div>
-                            <ul class="menubodysub">
-                                <li>책상</li>
-                                <li>액세서리</li>
+                            <ul class="menubodytit">
+                                <li><a href="#">책상</a></li>
+                                <ul class="menubodysub">
+                                    <li><a href="#">책상</a></li>
+                                    <li><a href="#">액세서리</a></li>
+                                </ul>
                             </ul>
                             <hr>
-                            <div class="menubodytit">수납장</div>
-                            <ul class="menubodysub">
-                                <li>서랍/수납장</li>
-                                <li>책상</li>
-                                <li>옷장/행거</li>
-                                <li>놀이장</li>
+                            <ul class="menubodytit">
+                                <li><a href="#">수납장</a></li>
+                                <ul class="menubodysub">
+                                    <li><a href="#">서랍/수납장</a></li>
+                                    <li><a href="#">책상</a></li>
+                                    <li><a href="#">옷장/행거</a></li>
+                                    <li><a href="#">놀이장</a></li>
+                                </ul>
                             </ul>
                             <hr>
-                            <div class="menubodytit">소파/의자</div>
-                            <ul class="menubodysub">
-                                <li>소파</li>
-                                <li>의자</li>
+                            <ul class="menubodytit">
+                                <li><a href="#">소파/의자</a></li>
+                                <ul class="menubodysub">
+                                    <li><a href="#">소파</a></li>
+                                    <li><a href="#">의자</a></li>
+                                </ul>
                             </ul>
                             <hr>
-                            <div class="menubodytit">액세서리</div>
+                            <ul class="menubodytit">
+                                <li><a href="#">액세서리</a></li>
+                            </ul>
                             <hr>
                         </div>
                     </div>
                     <div class="navmenu">
                         <div class="menutit">학생방</div>
                         <div class="menubody">                        
-                            <div class="menubodytit">책상</div>
-                            <ul class="menubodysub">
-                                <li>일반형</li>
-                                <li>기능형</li>
-                                <li>액세서리</li>
+                            <ul class="menubodytit">
+                                <li><a href="#">책상</a></li>
+                                <ul class="menubodysub">
+                                    <li><a href="#">일반형</a></li>
+                                    <li><a href="#">기능형</a></li>
+                                    <li><a href="#">액세서리</a></li>
+                                </ul>
                             </ul>
                             <hr>
-                            <div class="menubodytit">책장</div>
-                            <ul class="menubodysub">
-                                <li>책장</li>
-                                <li>액세서리</li>
+                            <ul class="menubodytit">
+                                <li><a href="#">책장</a></li>
+                                <ul class="menubodysub">
+                                    <li><a href="#">책장</a></li>
+                                    <li><a href="#">액세서리</a></li>
+                                </ul>
                             </ul>
                             <hr>
-                            <div class="menubodytit">수납장</div>
-                            <ul class="menubodysub">
-                                <li>서랍</li>
-                                <li>수납장</li>
-                                <li>옷장/행거</li>
+                            <ul class="menubodytit">
+                                <li><a href="#">수납장</a></li>
+                                <ul class="menubodysub">
+                                    <li><a href="#">서랍</a></li>
+                                    <li><a href="#">수납장</a></li>
+                                    <li><a href="#">옷장/행거</a></li>
+                                </ul>
                             </ul>
                             <hr>
-                            <div class="menubodytit">의자</div>
-                            <ul class="menubodysub">
-                                <li>의자</li>
-                                <li>액세서리</li>
+                            <ul class="menubodytit">
+                                <li><a href="#">의자</a></li>
+                                <ul class="menubodysub">
+                                    <li><a href="#">의자</a></li>
+                                    <li><a href="#">액세서리</a></li>
+                                </ul>
                             </ul>
                             <hr>
-                            <div class="menubodytit">침대</div>
-                            <ul class="menubodysub">
-                                <li>일반침대</li>
-                                <li>수납침대</li>
-                                <li>모션침대</li>
-                                <li>매트리스</li>
-                                <li>액세서리</li>
+                            <ul class="menubodytit">
+                                <li><a href="#">침대</a></li>
+                                <ul class="menubodysub">
+                                    <li><a href="#">일반침대</a></li>
+                                    <li><a href="#">수납침대</a></li>
+                                    <li><a href="#">모션침대</a></li>
+                                    <li><a href="#">매트리스</a></li>
+                                    <li><a href="#">액세서리</a></li>
+                                </ul>
                             </ul>
                             <hr>
                         </div>
@@ -204,34 +258,44 @@
                     <div class="navmenu">
                         <div class="menutit">서재</div>
                         <div class="menubody">                        
-                            <div class="menubodytit">책상</div>
-                            <ul class="menubodysub">
-                                <li>일반형</li>
-                                <li>모션형</li>
-                                <li>액세서리</li>
+                            <ul class="menubodytit">
+                                <li><a href="#">책상</li>
+                                <ul class="menubodysub">
+                                    <li><a href="#">일반형</a></li>
+                                    <li><a href="#">모션형</a></li>
+                                    <li><a href="#">액세서리</a></li>
+                                </ul>
                             </ul>
                             <hr>
-                            <div class="menubodytit">책장</div>
-                            <ul class="menubodysub">
-                                <li>책장</li>
-                                <li>액세서리</li>
+                            <ul class="menubodytit">
+                                <li><a href="#">책장</a></li>
+                                <ul class="menubodysub">
+                                    <li><a href="#">책장</a></li>
+                                    <li><a href="#">액세서리</a></li>
+                                </ul>
                             </ul>
                             <hr>
-                            <div class="menubodytit">서랍장</div>
-                            <ul class="menubodysub">
-                                <li>책상서랍</li>
+                            <ul class="menubodytit">
+                                <li><a href="#">서랍장</a></li>
+                                <ul class="menubodysub">
+                                    <li><a href="#">책상서랍</a></li>
+                                </ul>
                             </ul>
                             <hr>
-                            <div class="menubodytit">의자</div>
-                            <ul class="menubodysub">
-                                <li>태스크의자</li>
-                                <li>프리미엄의자</li>
-                                <li>보조의자</li>
+                            <ul class="menubodytit">
+                                <li><a href="#">의자</a></li>
+                                <ul class="menubodysub">
+                                    <li><a href="#">태스크의자</a></li>
+                                    <li><a href="#">프리미엄의자</a></li>
+                                    <li><a href="#">보조의자</a></li>
+                                </ul>
                             </ul>
                             <hr>
-                            <div class="menubodytit">수납장</div>
-                            <ul class="menubodysub">
-                                <li>장식장</li>
+                            <ul class="menubodytit">
+                                <li><a href="#">수납장</a></li>
+                                <ul class="menubodysub">
+                                    <li><a href="#">장식장</a></li>
+                                </ul>
                             </ul>
                             <hr>
                         </div>
@@ -239,15 +303,73 @@
                     <div class="navmenu">
                         <div class="menutit">펫</div>
                         <div class="menubody">                        
-                            <div class="menubodytit">가구</div>
-                            <ul class="menubodysub">
-                                <li>가구</li>
-                                <li>액세서리</li>
+                            <ul class="menubodytit">
+                                <li><a href="#">가구</a></li>
+                                <ul class="menubodysub">
+                                    <li><a href="#">가구</a></li>
+                                    <li><a href="#">액세서리</a></li>
+                                </ul>
                             </ul>
                             <hr>
                         </div>
                     </div>
                 </div>
+            </div>
+            <div class="mnav">
+                <span class="material-icons-outlined" id="cloesbtn">close</span>
+                <ul class="tit">
+                    <li><a href="#">침실</a></li>
+                    <ul class="subtit">
+                        <li><a href="#">침대</a></li>
+                        <li><a href="#">옷장</a></li>
+                        <li><a href="#">수납장</a></li>
+                        <li><a href="#">화장대</a></li>
+                        <li><a href="#">액세서리</a></li>
+                        <li><a href="#">매트리스</a></li>
+                    </ul>
+                    <li><a href="#">거실</a></li>
+                    <ul class="subtit">
+                        <li><a href="#">테이블</a></li>
+                        <li><a href="#">거실장</a></li>
+                        <li><a href="#">소파</a></li>
+                        <li><a href="#">수납장</a></li>
+                        <li><a href="#">액세서리</a></li>
+                    </ul>
+                    <li><a href="#">주방</a></li>
+                    <ul class="subtit">
+                        <li><a href="#">식탁</a></li>
+                        <li><a href="#">수납장</a></li>
+                        <li><a href="#">의자</a></li>
+                    </ul>
+                    <li><a href="#">키즈룸</a></li>
+                    <ul class="subtit">
+                        <li><a href="#">침대</a></li>
+                        <li><a href="#">책상</a></li>
+                        <li><a href="#">수납장</a></li>
+                        <li><a href="#">소파/의자</a></li>
+                        <li><a href="#">액세서리</a></li>
+                    </ul>
+                    <li><a href="#">학생방</a></li>
+                    <ul class="subtit">
+                        <li><a href="#">책상</a></li>
+                        <li><a href="#">책장</a></li>
+                        <li><a href="#">수납장</a></li>
+                        <li><a href="#">의자</a></li>
+                        <li><a href="#">침대</a></li>
+                    </ul>
+                    <li><a href="#">서재</a></li>
+                    <ul class="subtit">
+                        <li><a href="#">책상</a></li>
+                        <li><a href="#">책장</a></li>
+                        <li><a href="#">서랍장</a></li>
+                        <li><a href="#">의자</a></li>
+                        <li><a href="#">수납장</a></li>
+                    </ul>
+                    <li><a href="#">펫</a></li>
+                    <ul class="subtit">
+                        <li><a href="#">가구</a></li>
+                    </ul>
+                </ul>
             </div>
         </nav>
         <div class="swiper swiper-container mySwiper">
@@ -596,19 +718,34 @@
             disableOnInteraction: false,
         },
       });
+
 </script>
+
 <script>
     AOS.init();
   </script>
-<script>
-    $(".menubodysub>li").mouseover(function(){
-    $(this).children(".menubodysub").stop().slideDown();
-  });
-  $(".menubodysub>li").mouseleave(function(){
-    $(this).children(".menubodysub").stop().slideUp();
-  });
 
-  start();
+<script src="//code.jquery.com/jquery.min.js"></script>
+<script>
+//     $("#menuBtn").click(function () {
+//     if ($(this).hasClass(".nav")) {
+//       $(this).children().css("display", "none");
+//       $(this).removeClass();
+//     } else {
+//       $(this).addClass(".nav");
+//       $(this).children().css("display", "block");
+//     }
+//   });
+
+$("#menubtn").click(function() {
+	$(".nav").css("display", "flex");
+  $("body").addClass("dark")
+});
+$("#cloesbtn").click(function() {
+	$(".nav").css("display", "none");
+  $("body").removeClass("dark");
+});
+
 </script>
 </body>
 </html>
